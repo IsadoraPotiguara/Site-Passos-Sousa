@@ -1,0 +1,31 @@
+/* Paleta vinho/cinza baseada na logomarca */
+:root {
+  --brand: #6b2b2b;
+  --brand-600: #5f2424;
+  --brand-700: #4e1d1d;
+  --accent: #8a8a8a;
+  --muted: #d0d0d0;
+  --bg-subtle: #f7f6f5;
+}
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.btn-brand:hover {
+  background-color: var(--brand-600);
+  border-color: var(--brand-600);
+  color: #fff;
+}
+.brand { color: var(--brand); }
+.bg-gradient-subtle { background: linear-gradient(180deg, #fff, var(--bg-subtle)); }
+.nav-pills .nav-link.active { background-color: var(--brand); }
+.nav-pills .nav-link { color: var(--brand-700); }
+.list-group-item .badge { background-color: var(--brand); }
+.card { border-radius: 1rem; }
+
+/* Centered larger logo in navbar */
+.logo-centered { height: 80px; display: block; margin: 6px auto; }
+
+/* Custom border color for 'Advogados cadastrados' cards */
+.adv-card { border: 2px solid var(--brand) !important; }
